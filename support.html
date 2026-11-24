@@ -96,8 +96,8 @@
         <p class="last-updated">Effective date: November 24, 2026</p>
 
         <div class="contact-box">
-            <p><strong>Email:</strong> <a href="mailto:UNSET_LEGAL_CONTACT_EMAIL" data-legal-mailto data-legal-email>UNSET_LEGAL_CONTACT_EMAIL</a></p>
-            <p>Operator: Atharv Raotole (individual). There is no MileScope user account. Contact is email-only.</p>
+            <p><strong>Contact:</strong> <a href="support.html" data-legal-mailto data-legal-email>the support page</a></p>
+            <p>Operator: Atharv Raotole (individual). There is no MileScope user account.</p>
         </div>
 
         <h2>Getting started</h2>
@@ -156,7 +156,7 @@
         <div class="faq-item">
             <div class="faq-question">Can I get a refund?</div>
             <div class="faq-answer">
-                <p>Ask Apple under their refund policies. <a href="mailto:UNSET_LEGAL_CONTACT_EMAIL" data-legal-mailto data-legal-email>UNSET_LEGAL_CONTACT_EMAIL</a> can point you to the store tools but cannot issue store refunds directly.</p>
+                <p>Ask Apple under their refund policies. If you need a pointer to the store tools, reach us at <a href="support.html" data-legal-mailto data-legal-email>the support page</a>. We cannot issue store refunds directly.</p>
             </div>
         </div>
 
@@ -186,12 +186,12 @@
             <li>Confirm Motion &amp; Fitness access for MileScope on iOS</li>
             <li>Turn off Low Power Mode while testing</li>
             <li>Restart the phone</li>
-            <li>Email <a href="mailto:UNSET_LEGAL_CONTACT_EMAIL" data-legal-mailto data-legal-email>UNSET_LEGAL_CONTACT_EMAIL</a> with app version, device, and OS (not location coordinates)</li>
+            <li>Write to us at <a href="support.html" data-legal-mailto data-legal-email>the support page</a> with app version, device, and OS (not location coordinates)</li>
         </ol>
 
         <h2>Contact</h2>
         <div class="contact-box">
-            <p><strong>Email:</strong> <a href="mailto:UNSET_LEGAL_CONTACT_EMAIL" data-legal-mailto data-legal-email>UNSET_LEGAL_CONTACT_EMAIL</a></p>
+            <p><strong>Contact:</strong> <a href="support.html" data-legal-mailto data-legal-email>the support page</a></p>
             <p><strong>Feature requests / bugs / security:</strong> same inbox</p>
             <p>Please include app version, device model, and OS version. Do not paste raw location trails into email unless support asks for a redacted example.</p>
         </div>
@@ -226,7 +226,7 @@
             form.addEventListener('submit', function (e) {
                 e.preventDefault();
                 var cfg = window.MILESCOPE_LEGAL || {};
-                var email = cfg.contactEmail || 'UNSET_LEGAL_CONTACT_EMAIL';
+                var email = cfg.contactEmail || '';
                 var fb = document.getElementById('support-form-fallback');
                 if (!email || /^UNSET_/.test(email)) {
                     if (fb) {
