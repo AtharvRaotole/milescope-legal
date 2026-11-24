@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center - MileScope</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: #0B0B0C;
+            color: #EDEDED;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 60px 24px; }
+        .back-link {
+            display: inline-block;
+            color: #A0A0A0;
+            text-decoration: none;
+            margin-bottom: 32px;
+            font-size: 14px;
+        }
+        .back-link:hover { color: #EDEDED; }
+        h1 {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 1.2;
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
+        }
+        .subtitle { color: #A0A0A0; font-size: 18px; margin-bottom: 48px; }
+        h2 {
+            font-weight: 700;
+            font-size: 28px;
+            margin-top: 48px;
+            margin-bottom: 20px;
+        }
+        p { margin-bottom: 20px; color: #D0D0D0; }
+        a { color: #EDEDED; text-decoration: underline; }
+        .faq-item {
+            background-color: #15151A;
+            border: 1px solid #2A2A2F;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+        .faq-category {
+            color: #A0A0A0;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        .faq-question {
+            font-weight: 700;
+            font-size: 18px;
+            color: #EDEDED;
+            margin-bottom: 12px;
+        }
+        .faq-answer { color: #D0D0D0; line-height: 1.6; }
+        .contact-box {
+            background-color: #1A1A20;
+            border-left: 4px solid #4A4A4F;
+            padding: 24px;
+            margin: 32px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 1px solid #2A2A2F;
+            color: #666;
+            font-size: 14px;
+        }
+        @media (max-width: 640px) {
+            .container { padding: 40px 20px; }
+            h1 { font-size: 32px; }
+            h2 { font-size: 24px; }
+        }
+    </style>
+    <script src="config.js"></script>
+    <script src="legal-fill.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">Back to Legal</a>
+
+        <h1>Help Center</h1>
+        <p class="subtitle">Short answers for MileScope. Effective date: November 24, 2026</p>
+
+        <div class="contact-box">
+            <p><strong>Operator:</strong> Atharv Raotole (individual).</p>
+            <p><strong>Email support:</strong> <a href="mailto:UNSET_LEGAL_CONTACT_EMAIL" data-legal-mailto data-legal-email>UNSET_LEGAL_CONTACT_EMAIL</a></p>
+            <p>Include app version, device, and OS. Do not include location data.</p>
+        </div>
+
+        <h2>Getting started</h2>
+        <div class="faq-item">
+            <div class="faq-category">Getting started</div>
+            <div class="faq-question">How does automatic trip tracking work?</div>
+            <div class="faq-answer">MileScope uses background location (and motion signals on iOS where available) to detect drives and store them in on-device SQLite. Grant Location (Always) so trips can be recorded when the app is not open.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-category">Billing</div>
+            <div class="faq-question">How do I restore Premium?</div>
+            <div class="faq-answer">There is no MileScope account. Open the paywall and tap Restore Purchases while signed into the same App Store account that subscribed.</div>
+        </div>
+
+        <h2>Gig work and taxes</h2>
+        <div class="faq-item">
+            <div class="faq-category">Gig work</div>
+            <div class="faq-question">Can I use MileScope for rideshare or delivery driving?</div>
+            <div class="faq-answer">Yes. Log your drives, classify work-related miles as business (or the category that fits), and export PDF or CSV for your own records. Confirm classification rules with a tax professional.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-category">Taxes</div>
+            <div class="faq-question">Are the deduction figures tax advice?</div>
+            <div class="faq-answer">No. Tax figures in MileScope are records and estimates for your bookkeeping. They are not tax advice and do not guarantee any tax outcome.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-category">Taxes</div>
+            <div class="faq-question">Which IRS mileage rate does MileScope use?</div>
+            <div class="faq-answer">MileScope can apply IRS standard mileage rates for the trip date (including mid-year changes) or a custom rate you set. Confirm current IRS rates when you file.</div>
+        </div>
+
+        <h2>Privacy</h2>
+        <div class="faq-item">
+            <div class="faq-category">Privacy</div>
+            <div class="faq-question">Is my data stored on my phone or in the cloud?</div>
+            <div class="faq-answer">Trip data is stored locally in SQLite by default. Optional private iCloud / CloudKit backup is available on iOS if you enable it. There is no MileScope account cloud for your log.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-category">Privacy</div>
+            <div class="faq-question">How do I delete all data?</div>
+            <div class="faq-answer">Open Settings, tap Delete all data, and confirm. Export first if you need a copy. See the <a href="privacy.html">Privacy Policy</a> for details.</div>
+        </div>
+
+        <h2>More in the app</h2>
+        <p>Open <strong>Settings &gt; Help center</strong> in the MileScope app for the full searchable FAQ and mail templates that attach app version, device, and OS (never location).</p>
+        <p>Also see <a href="support.html">Support</a>, <a href="privacy.html">Privacy</a>, and <a href="terms.html">Terms</a>.</p>
+
+        <footer>
+            <p>&copy; 2026 Atharv Raotole. All rights reserved.</p>
+            <p><a href="privacy.html">Privacy</a> | <a href="terms.html">Terms</a> | <a href="support.html">Support</a></p>
+        </footer>
+    </div>
+</body>
+</html>

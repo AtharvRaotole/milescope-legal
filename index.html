@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MileScope - Legal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: #0B0B0C;
+            color: #EDEDED;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        h1 {
+            font-family: 'Manrope', sans-serif;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .tagline {
+            font-size: 18px;
+            color: #A0A0A0;
+            margin-top: 12px;
+        }
+
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 60px;
+        }
+
+        .nav-card {
+            background-color: #15151A;
+            border: 1px solid #2A2A2F;
+            border-radius: 12px;
+            padding: 32px;
+            text-decoration: none;
+            color: #EDEDED;
+            transition: all 0.2s ease;
+            display: block;
+        }
+
+        .nav-card:hover {
+            border-color: #4A4A4F;
+            background-color: #1A1A1F;
+            transform: translateY(-2px);
+        }
+
+        .nav-card h2 {
+            font-family: 'Manrope', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        .nav-card p {
+            color: #A0A0A0;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 100px;
+            padding-top: 40px;
+            border-top: 1px solid #2A2A2F;
+            color: #666;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #A0A0A0;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #EDEDED;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 40px 20px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            .nav-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <script src="config.js"></script>
+    <script src="legal-fill.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MileScope Legal</h1>
+            <p class="tagline">Privacy, terms, and support for on-device mileage tracking</p>
+        </header>
+
+        <div class="nav-grid">
+            <a href="privacy.html" class="nav-card">
+                <h2>Privacy Policy</h2>
+                <p>On-device SQLite storage, optional iCloud backup, no MileScope account, no sale of personal data.</p>
+            </a>
+
+            <a href="terms.html" class="nav-card">
+                <h2>Terms of Use</h2>
+                <p>License, Apple auto-renewable subscription rules, Restore Purchases, and limits of liability.</p>
+            </a>
+
+            <a href="support.html" class="nav-card">
+                <h2>Support</h2>
+                <p>Help with tracking, billing, restore, and deleting data. Email <span data-legal-email>UNSET_LEGAL_CONTACT_EMAIL</span>.</p>
+            </a>
+
+            <a href="help.html" class="nav-card">
+                <h2>Help Center</h2>
+                <p>Short FAQ for getting started, taxes as records not advice, and privacy basics.</p>
+            </a>
+        </div>
+
+        <p style="margin-top: 48px; color: #A0A0A0; font-size: 15px;">
+            Operator: Atharv Raotole (individual). Contact is email-only at <span data-legal-email>UNSET_LEGAL_CONTACT_EMAIL</span>.
+        </p>
+
+        <footer>
+            <p>&copy; 2026 Atharv Raotole. All rights reserved.</p>
+            <p style="margin-top: 8px;">
+                <a href="mailto:UNSET_LEGAL_CONTACT_EMAIL" data-legal-mailto data-legal-email>UNSET_LEGAL_CONTACT_EMAIL</a><br>
+                Operator: Atharv Raotole<br>
+                Effective: November 24, 2026
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
