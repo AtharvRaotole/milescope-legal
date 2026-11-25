@@ -14,18 +14,27 @@
             box-sizing: border-box;
         }
 
+        html {
+            overflow-x: hidden;
+        }
+
         body {
             font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             background-color: #0B0B0C;
             color: #EDEDED;
             line-height: 1.7;
             font-size: 16px;
+            overflow-x: hidden;
+            overflow-wrap: anywhere;
+            word-break: break-word;
         }
 
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 60px 24px;
+            overflow-wrap: anywhere;
+            word-break: break-word;
         }
 
         .back-link {
@@ -188,7 +197,10 @@
             <li>Optional profile fields you choose to enter (such as a display name)</li>
             <li>Local subscription status cached so the app knows whether Premium is active</li>
             <li>Demo or sample trips if you use demo mode</li>
+            <li>Shift Mode records: start and end times, the gig apps you pick, and any pay or tips you enter</li>
+            <li>Possible missed drives you mark as not a drive</li>
         </ul>
+        <p>Optional Timeline import files you choose are read on this device to rebuild past drives. Those files are not uploaded to MileScope.</p>
         <p>Core tracking and reporting work offline from this local database.</p>
 
         <h2>Location and background tracking</h2>
@@ -203,7 +215,7 @@
         <p>You export a report (for example PDF or CSV) or share a backup file through the system share sheet. You choose where that file goes.</p>
 
         <h3>Optional iCloud / CloudKit backup</h3>
-        <p>On iOS, you may enable backup to your private iCloud (CloudKit). That copy is associated with your Apple ID, not with a MileScope account. If you keep logs on the phone only, trip data is not pushed to iCloud by MileScope.</p>
+        <p>On iOS, you may enable backup to your private iCloud (CloudKit). That copy is associated with your Apple ID, not with a MileScope account. If you keep logs on the phone only, trip data is not pushed to iCloud by MileScope. When backup is on, it includes your shifts and the pay you entered, so they come back with your trips.</p>
 
         <h3>Maps and reverse geocoding (iOS production build)</h3>
         <ul>
@@ -241,6 +253,7 @@
 
         <h2>How we use information</h2>
         <p>On-device data is used to log and display trips, calculate mileage and deduction-style figures, show maps, classify trips, build exports you request, and remember settings and Premium status.</p>
+        <p>If you import a Timeline export file, MileScope reads that file on your iPhone only and does not upload it. Widget and Live Activity snapshots may use an App Group on the device so Lock Screen and Home Screen surfaces can show your miles without a MileScope server. Siri and Shortcuts requests to start or end a shift are handled on your iPhone through the same App Group.</p>
         <div class="highlight">
             <p><strong>Tax-related numbers in the app are records and estimates for your own use. They are not tax advice.</strong> MileScope does not guarantee any tax outcome, deduction amount, or IRS acceptance of your records. You are responsible for reviewing your log and consulting a tax professional when needed.</p>
         </div>
